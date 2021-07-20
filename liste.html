@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+    <meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, lagencesuresnes, HTML 5, CSS 3, Patrick Isola, Isola, encadrant technique">
+    <meta name="author" content="Patrick Isola">
+    <title>Mon premier site en HTML 5 et en CSS 3 - Textes HTML</title>
+		<!-- à compléter, feuille de style css, typo etc. -->
+
+    <!-- nous chargeons en CDN (Content Delivery Network) la typo font awesome, la version gratuite, qui comporte 1600 icônes. -->
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c0ee152112.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- en-tete de la page-->
+		<header>			
+			<div id="logo">
+				<img src="img/logo.png" alt="logo html 5 et css 3">
+			</div>
+			<h1>Mon premier site en HTML 5 et CSS 3</h1>
+		</header>
+		<!-- fin header-->
+
+        <!-- navigation principale -->
+		<nav>
+			<div>
+				<!-- zone du menu avec des liens simples pour faire notre menu -->
+				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
+				<a href="image.html" title="HTML 5 CSS 3 - Image">Image</a>
+				<a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+				<a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+				<a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+				<a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+				<a href="lien.html" title="HTML 5 CSS 3 - Liens">Lien</a>
+				<a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire">Formulaire</a>
+				<a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+				<a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+				<a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récaptitulatif</a>
+			</div>
+		</nav>
+		<!-- fin nav-->
+
+        <main>
+            <h2>Les listes - <i class="fas fa-list-ul"></i></h2>
+            <section>
+                <h3>Les listes avec la balise <code>&lt;ul&gt;</code></h3>
+                <p>Les fruits que préfère Miredie</p>
+                <!-- ul : unordered list ; liste non ordonnée ou liste à puces -->
+                <ul>
+                    <!-- li : list item ; un élément de liste -->
+                    <li>Raisin</li>
+                    <li>Melon</li>
+                    <li>Orange</li>
+                    <li>Ananas</li>
+                </ul>
+
+                <h3>Les listes avec la balise <code>&lt;ol&gt;</code></h3>
+                <p>Les fruits dans l'ordre de préférence</p>
+                <!-- ol : ordered list ; liste ordonnée ou liste numérotée -->
+                <ol>
+                    <li>Raisin</li>
+                    <li>Ananas</li>
+                    <li>Melon</li>
+                    <li>Orange</li>
+                </ol>
+
+                <h3>Les listes imbriquées</h3>
+
+                <!-- ul>li*6  -->
+                <ul>
+                    <li>Afrique
+                        <ul>
+                            <li>Afrique du Sud</li>
+                            <li>Algérie</li>
+                            <li>Cameroun</li>
+                            <li>Maroc</li>
+                        </ul>
+                    </li>
+                        
+                    <li>Antarctique</li>
+                    <li>Amérique
+                        <ul>
+                            <li>Colombie</li>
+                            <li>Guatémala</li>
+                            <li>Pérou</li>
+                            <li>USA</li>
+                        </ul>
+                    </li>
+                    <li>Asie
+                        <ul>   
+                            <li>Bangladesh</li>
+                            <li>Chine</li>
+                            <li>Inde</li>
+                            <li>Japon</li>
+                            <li>Vietnam</li>
+                        </ul>
+                    </li>
+                    <li>Europe
+                        <ul>
+                            <li>Espagne</li>
+                            <li>Italie</li>
+                            <li>France</li>
+                            <li>Hongrie</li>
+                        </ul>
+                    </li>
+                    <li>Océanie
+                        <ul>
+                            <li>Australie</li>
+                            <li>Nelle Zélande</li>
+                            <li>Iles Fidji</li>
+                            <li>Papouasie Nelle Guinée</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
+            </section>
+        </main>
+    
+</body>
+</html>
