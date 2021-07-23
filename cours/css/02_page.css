@@ -1,0 +1,33 @@
+/* feuille de style pour la page sur l'Espagne */
+
+body {
+   background-image: url('../../img/concrete-texture.png');
+}
+
+header {
+    background-color: olive;
+}
+
+nav {
+    background-color: cornflowerblue;
+}
+
+main {
+    background-color: rgb(19, 160, 73);
+    width: 1200px;
+}
+
+footer {
+    background-color: ghostwhite;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+article {
+    background-color: #fff;
+}
+aside {
+    background-color: lightgrey;
+}
