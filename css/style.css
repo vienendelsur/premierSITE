@@ -145,6 +145,11 @@ header {
     text-align: right;
 }
 
+header a {
+    text-decoration: none;
+    color: #10828c;
+}
+
 /* la classe clear pour rétablir le flux  */
 .clear {
     clear: both;
