@@ -56,7 +56,7 @@ h1 {
     /* typo google */
     font-family: 'Anton', sans-serif;
     /* taille de typo  */
-    font-size: 45px;
+    font-size: 40px;
     /* espacement entre les lettres */
     letter-spacing: 1px;
     /* couleur réf. héxadécimale */
@@ -112,14 +112,14 @@ header {
 /* dans le header, les trois zones suivantes flottent toutes les trois à gauche elles ont une largeur en %, donc une largeur relatives à l'élément parent donc header */
 /* la propriété float sert à casser le flux du html */
 #logo {
-    /* la boite  */
+    /* 1 la boite  */
     width: 25%;
     float: left;
-    /* marge intérieure de l'élément padding = rembourrage */
+    /* 2 marge intérieure de l'élément padding = rembourrage */
     padding: 15px;   
-    /* l'aspect de la boite */
+    /* 3 aspect de la boite */
     background-color: #719bc5;
-    /* le texte */
+    /* 4 texte */
     text-align: center;
 }
 
@@ -134,6 +134,15 @@ header {
     width: 25%;
     float: left;
     background-color: #719bc5;
+}
+
+#social i {
+    /* je change la nature de l'élément i qui est de type inline, en un élément de type block */
+    display: block;
+    padding: 15px 30px 0 0;
+
+    font-size: 30px;
+    text-align: right;
 }
 
 /* la classe clear pour rétablir le flux  */
