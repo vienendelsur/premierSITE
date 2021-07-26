@@ -1,12 +1,46 @@
-/* les styles pour le premierSITE  Patrick Isola chantier Suresnes 2021-2022 */
+/* les styles pour le premierSITE Patrick Isola chantier Suresnes 2021-2022 */
 
 
-/* les typos Google FOnt utilisées dans le site  */
+@charset "UTF-8";
+
+/* reset simple  */
+/* l'étoile signifie tout all */
+/* sinon on peut utiliser le reset d'Eric Meyer qui se trouve à cette adresse : http://meyerweb.com/eric/tools/css/reset/ */
+
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* fin du reseet simple */
+
+
+/* les typos Google Font utilisées dans le site  */
 /* Anton, Oswald, Lemonada  */
 
 /* font-family: 'Anton', sans-serif;
 font-family: 'Lemonada', cursive;
 font-family: 'Oswald', sans-serif; */
+
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -39,7 +73,7 @@ h2 {
     text-shadow: 1px 1px 2px #aaa;
 }
 
-/* taille de l'icône dans le h2  */
+/* taille de l'icône dans les h2  */
 /* i enfant de h2 ; l'icône sera 150% plus grande que la taille d'origine */
 h2 i {
     font-size: 150%;
@@ -64,4 +98,45 @@ blockquote i {
     font-size: 350%;
     color: #6acafc;
     vertical-align: middle;
+}
+
+/* A compléter position */
+
+/* Hedear dans la page index */
+
+header {
+    height: 175px;
+    background-color: #719bc5;
+}
+
+/* dans le header, les trois zones suivantes flottent toutes les trois à gauche elles ont une largeur en %, donc une largeur relatives à l'élément parent donc header */
+/* la propriété float sert à casser le flux du html */
+#logo {
+    /* la boite  */
+    width: 25%;
+    float: left;
+    /* marge intérieure de l'élément padding = rembourrage */
+    padding: 15px;   
+    /* l'aspect de la boite */
+    background-color: #719bc5;
+    /* le texte */
+    text-align: center;
+}
+
+#slogan {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+    background-color: #719bc5;
+}
+
+#social {
+    width: 25%;
+    float: left;
+    background-color: #719bc5;
+}
+
+/* la classe clear pour rétablir le flux  */
+.clear {
+    clear: both;
 }
