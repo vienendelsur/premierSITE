@@ -102,7 +102,7 @@ blockquote i {
 
 /* A compléter position */
 
-/* Hedear dans la page index */
+/* header */
 
 header {
     height: 175px;
@@ -137,8 +137,7 @@ header {
 }
 
 #social i {
-    /* je change la nature de l'élément i qui est de type inline, en un élément de type block */
-    display: block;
+    display: block; /* je change la nature de l'élément i qui est de type inline, en un élément de type block */
     padding: 15px 30px 0 0;
 
     font-size: 30px;
