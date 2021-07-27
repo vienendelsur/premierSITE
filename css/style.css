@@ -1,15 +1,12 @@
 /* les styles pour le premierSITE Patrick Isola chantier Suresnes 2021-2022 */
-
-
 @charset "UTF-8";
-
 /* reset simple  */
 /* l'étoile signifie tout all */
 /* sinon on peut utiliser le reset d'Eric Meyer qui se trouve à cette adresse : http://meyerweb.com/eric/tools/css/reset/ */
-
-*{
+* {
     box-sizing: border-box;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,7 +30,6 @@ time, mark, audio, video {
 
 /* fin du reseet simple */
 
-
 /* les typos Google Font utilisées dans le site  */
 /* Anton, Oswald, Lemonada  */
 
@@ -41,13 +37,11 @@ time, mark, audio, video {
 font-family: 'Lemonada', cursive;
 font-family: 'Oswald', sans-serif; */
 
-
 body {
     font-family: 'Oswald', sans-serif;
     /* image de fond  */
     /* chemin depuis le fichier style.css ; on sort du dossier css puis on rentre dans le dossier img : ../ le chemin pour sortir d'un dossier */
     background-image: url('../img/concrete-texture.png');
-
 }
 
 /* les titres du site */
@@ -103,7 +97,6 @@ blockquote i {
 /* A compléter position */
 
 /* header */
-
 header {
     height: 175px;
     background-color: #719bc5;
@@ -148,9 +141,7 @@ header a {
 }
 
 /* fin header */
-
 /* la nav, la navigation */
-
 nav {    
     height: 70px;
     padding: 15px;
@@ -185,13 +176,10 @@ nav a:hover {
     background-color: #a6d6c3;
     color: #fff;
 }
-
 /* fin nav */
-
 /* les zones principales */
-
 main {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     /* une couleur en rgba : red green blue et avec un canal "alpha" on joue sur la transparence de la couleur rgb */
     background-color: rgba(178, 178, 178, 0.178);
@@ -200,12 +188,30 @@ main {
 aside {
     height: 250px;
     width: 30%;
+    padding: 10px;
     float: left;
     background-color: #a6d6c3;
 }
 
+#accueil {
+    width: 70%;
+    float: left;
+}
 
+section {
+    margin-top: 50px;
+    padding: 20px;
+}
 
+footer {
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2980b9;
+
+    text-align: center;
+    color: #fff;
+}
 /* la classe clear pour rétablir le flux  */
 .clear {
     clear: both;

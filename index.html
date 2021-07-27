@@ -4,33 +4,24 @@
 		<meta charset="UTF-8">		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche. Cette balise, parmi d'autres sera utile au référencement naturel-->
 		<meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
-		
 		<!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
 		<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, lagencesuresnes, HTML 5, CSS 3, Patrick Isola, Isola, encadrant technique">
-		
 		<!-- l'auteur de la page -->
 		<meta name="author" content="Patrick Isola">
-
 		<title>Mon premier site en HTML 5 et en CSS 3 - Accueil</title>
-		
 		<!-- les Google Fonts anton, lemonada et owswald  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
-
 		<!-- feuille style du site -->
 		<link rel="stylesheet" href="css/style.css">
-		
 		 <!-- nous chargeons en CDN (Content Delivery Network) la typo font awesome, la version gratuite, qui comporte 1600 icônes. -->
 		<!-- FontAwesome Typos -->
 		<script src="https://kit.fontawesome.com/c0ee152112.js" crossorigin="anonymous"></script>
-
 	</head>
 	<body>	
-
 		<!-- bien indenter son code c'est s'assurer de la bonne imbrication des balises et augmenter la lisibilité du code-->
 		<!-- en-tete de la page-->
 		<header>			
@@ -41,13 +32,9 @@
 				</a>
 				<img src="img/logo.png" alt="logo html 5 et css 3">
 			</div>
-
 			<div id="slogan">
-				<a href="index.html">
-					<h1>Mon premier site en HTML 5 et CSS 3</h1>
-				</a>
+				<a href="index.html"><h1>Mon premier site en HTML 5 et CSS 3</h1></a>
 			</div>
-			
 			<div id="social">
 				<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
 				<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -55,7 +42,6 @@
 			<div class="clear"></div>
 		</header>
 		<!-- fin header-->
-		
 		<!-- navigation principale -->
 		<nav>
 			<div>
@@ -75,9 +61,7 @@
 				<a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récaptitulatif</a>
 			</div>
 		</nav>
-		<!-- fin nav-->
-
-		
+		<!-- fin nav-->		
 		<!-- contenu principal-->
 		<main>
 			<!-- aside : la partie latérale de la section principale-->
@@ -86,8 +70,7 @@
 				<p>Ici, la balise <code>&lt;aside&gt;</code> mais il n'y a que ce paragraphe.</p>
 				<p>Et cette phrase dans laquelle je vous donne le raccourci pour ouvrir un fichier dans logiciel <kbd>CTRL + O</kbd>.</p>
 			</aside>
-
-			<section>
+			<section id="accueil">
 				<!-- div : zone supplémentaire de contenu -->
 				<div>
 					<h2>Ici un titre de niveau 2 dans div</h2>			
@@ -105,18 +88,14 @@
 					<a href="#">Récap points de CSS</a> - <a href="texte.html">Récap texte HTML</a> 
 				</article>	
 			</section>
+			<div class="clear"></div>
 		</main>
 		<!-- fin main-->
-		
-
 		<!-- pied de page-->
 		<footer>
 			<!-- pour les caractères spéciaux nous avons besoin de les coder cf. https://dev.w3.org/html5/html-author/charref  -->
 			<p>&copy; L'agence Suresnes 2021</p>
 		</footer>
 		<!-- fin footer-->
-
-
-
 	</body>
 </html>
