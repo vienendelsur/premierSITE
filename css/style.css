@@ -115,8 +115,7 @@ header {
     /* 1 la boite  */
     width: 25%;
     float: left;
-    /* 2 marge intérieure de l'élément padding = rembourrage */
-    padding: 15px;   
+    padding: 15px;  /* 2 marge intérieure de l'élément padding = rembourrage */
     /* 3 aspect de la boite */
     background-color: #719bc5;
     /* 4 texte */
@@ -136,10 +135,9 @@ header {
     background-color: #719bc5;
 }
 
-#social i {
+#social i { /* ici on cible un élément i dont le parent à l'id "social" */
     display: block; /* je change la nature de l'élément i qui est de type inline, en un élément de type block */
     padding: 15px 30px 0 0;
-
     font-size: 30px;
     text-align: right;
 }
@@ -148,6 +146,65 @@ header a {
     text-decoration: none;
     color: #10828c;
 }
+
+/* fin header */
+
+/* la nav, la navigation */
+
+nav {    
+    height: 70px;
+    padding: 15px;
+
+    background-color: #2980b9;
+    /* une bordure en bas */
+    border-bottom: 8px solid #6acafc;  
+
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 2px 10px;
+
+    background: #6acafc;
+    border: 2px solid #fff;
+    /* arrondi des angles des bordures */
+    /* https://css3generator.com/  */
+    border-radius: 10px 0;
+
+    font-family: 'Oswald', sans-serif;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    /* transition sur le nav a, marche avec le a :hover */
+    transition: 0.5s;
+}
+
+nav a:hover {
+    /* a :hover une pseudo-class un effet au survol du curseur */
+    background-color: #a6d6c3;
+    color: #fff;
+}
+
+/* fin nav */
+
+/* les zones principales */
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    /* une couleur en rgba : red green blue et avec un canal "alpha" on joue sur la transparence de la couleur rgb */
+    background-color: rgba(178, 178, 178, 0.178);
+}
+
+aside {
+    height: 250px;
+    width: 30%;
+    float: left;
+    background-color: #a6d6c3;
+}
+
+
 
 /* la classe clear pour rétablir le flux  */
 .clear {
