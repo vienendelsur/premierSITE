@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo : 12</title>
+    <style>
+        /* couleurs */
+        .vert {
+            background:green;
+        }
+        .orange {
+            background: orangered;
+        }
+        .bleu {
+            background: lightblue;
+        }
+
+        .centre {
+            margin: auto;
+            width: 60%;
+            border: 2px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .imgcentre {
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .droite {
+            position: absolute; /* position absolute et right 0 */
+            right: 10px;
+            width: 300px;
+            border: 2px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Au centre horizontalement !</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque corporis quas quam nostrum itaque numquam enim pariatur rerum voluptatem esse in, quae impedit laboriosam ut accusamus asperiores nam maxime?</p>
+        <div class="centre bleu">
+            <p>Le paragraphe <em>est centré dans un bloc centré</em>.</p>
+        </div>
+
+    <hr> 
+    <h2>Une image centrée</h2>
+        <p>Pour centrer une image mettre les marges gauche et droite à auto et changer sa nature "d'inline" à "block"</p>
+        <img src="../exos/img/cinque_torre.png" alt="montagne" class="imgcentre">
+    <hr>
+
+    <h2>Alignement à gauche et à droite en utilisant "position"</h2>
+        <p>Une méthode pour aligner des éléments est d'utiliser <code>position: absolute;</code></p>
+        <div class="droite">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse ducimus nisi labore animi facere harum accusamus eaque odit incidunt. Eaque non tempora pariatur laborum doloremque odio ea nihil! Quae!</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo : 08</title>
+    <style>
+        body {
+            background: olive;
+        }
+
+        main {
+            margin: auto;
+            width: 800px;
+            background-color: #fff;
+        }
+        div {
+            background: pink;
+            margin-bottom: 10px;
+        }
+        p {
+            background: white;
+            color: red;
+        }
+        a {
+            background: plum;
+        }
+        .displaynone {
+            display: none;
+        }
+        .displayinline {
+            display: inline;
+            /* height: 50px;
+            width: 480px; */
+        }
+        .displayblock {
+            display: block;
+        }
+        .displayinlineblock {
+            display: inline-block;
+            
+            height: 500px;
+            width: 500px; 
+        }
+    </style>
+</head>
+<body>
+        <main>
+            <h1>Display</h1>
+            
+            <div>        
+            <h2>1/ Comportement normal de chez normal</h2>
+                <mark>Lorem ipsum dolor sit amet consectetur</mark> adipisicing elit. Cumque esse inventore, eveniet temporibus nostrum numquam soluta doloremque illo, perspiciatis deleniti omnis laboriosam, distinctio consectetur! <p>Coucou les amis, un paragraphe !</p>Ipsam iure aperiam quidem dolore ad! <a href="#">Et à la fin du texte un lien !</a>
+            </div>
+            <div>
+            <h2>2/ display: none;</h2>
+            <!-- l'élément n'est pas affiché -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse inventore, eveniet temporibus nostrum numquam soluta doloremque illo, perspiciatis deleniti omnis laboriosam, distinctio consectetur! <p class="displaynone">Coucou les amis, un paragraphe !</p>Ipsam iure aperiam quidem dolore ad! <a href="#" class="displaynone">Et à la fin du texte un lien !</a>
+            </div>
+            <div>
+                <h2>3/ display: inline;</h2>
+                <!-- affiche un élément comme un élément enligne aucune propriété de largeur ni de hauteur n'auront d'effet -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse inventore, eveniet temporibus nostrum numquam soluta doloremque illo, perspiciatis deleniti omnis laboriosam, distinctio consectetur! <p class="displayinline">Coucou les amis, un paragraphe !</p>Ipsam iure aperiam quidem dolore ad! <a href="#" class="displayinline">Et à la fin du texte un lien !</a>
+            </div>
+            <div>
+                <h2>4/ display: block;</h2>
+                <!-- affiche un élément comme un bloc (ex. p) il commence sur une nouvelle ligne et prends toute la largeur -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse inventore, eveniet temporibus nostrum numquam soluta doloremque illo, perspiciatis deleniti omnis laboriosam, distinctio consectetur ! <p class="displayblock">Coucou les amis, un paragraphe !</p>Ipsam iure aperiam quidem dolore ad! <a href="#" class="displayblock">Et à la fin du texte un lien !</a>
+            </div>
+            <div>
+                <h2>5/ display: inline-block;</h2>
+                <!-- affiche un élément comme un élément de niveau de bloc enligne ; l'élément est formaté comme un élément enligne mais on peut lui donner une valeur de hauteur et de largeur ! -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse inventore, eveniet temporibus nostrum numquam soluta doloremque illo, perspiciatis deleniti omnis laboriosam, distinctio consectetur ! <p class="displayinlineblock">Coucou les amis, un paragraphe !</p>Ipsam iure aperiam quidem dolore ad! <a href="#" class="displayinlineblock">Et à la fin du texte un lien !</a></p>
+            </div>
+        </main>
+    </body>
+</html>
