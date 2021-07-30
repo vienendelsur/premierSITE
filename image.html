@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- La description : phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche. Cette balise, parmi d'autres sera utile au référencement naturel-->
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021">
+    <!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
+    <meta name="keywords"
+        content="Premier site, Colombbus, Suresnes, l'agence Suresnes, lagencesuresnes, HTML 5, CSS 3, Patrick Isola, Isola, encadrant technique">
+    <!-- l'auteur de la page -->
+    <meta name="author" content="Patrick Isola">
+    <title>Mon premier site en HTML 5 et en CSS 3 - Les images</title>
+    <!-- les Google Fonts anton, lemonada et owswald  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap"
+        rel="stylesheet">
+    <!-- feuille style du site -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- nous chargeons en CDN (Content Delivery Network) la typo font awesome, la version gratuite, qui comporte 1600 icônes. -->
+    <!-- FontAwesome Typos -->
+    <script src="https://kit.fontawesome.com/c0ee152112.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- en-tete de la page-->
+    <header>
+        <div id="logo">
+            <!-- le bouton et le lien vers l'ancre #logo -->
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+            <img src="img/logo.png" alt="logo html 5 et css 3">
+        </div>
+        <div id="slogan">
+            <a href="index.html">
+                <h1>Mon premier site en HTML 5 et CSS 3</h1>
+            </a>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <!-- fin header-->
+
+    <!-- navigation principale -->
+    <nav>
+        <div>
+            <!-- zone du menu avec des liens simples pour faire notre menu -->
+            <a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+            <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+            <a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
+            <a href="image.html" title="HTML 5 CSS 3 - Image" class="active">Image</a>
+            <a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+            <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+            <a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+            <a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+            <a href="lien.html" title="HTML 5 CSS 3 - Liens">Lien</a>
+            <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+            <a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+            <a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récaptitulatif</a>
+        </div>
+    </nav>
+    <!-- fin nav-->
+
+    <main>
+        <!-- section 1 -->
+        <section>
+            <h2>Les images - <i class="fas fa-image"></i></h2>
+        </section>
+
+        <!-- section 2 -->
+        <section class="img-fond">
+            <h3>Une image de fond en CSS - <i class="fas fa-comment-alt"></i></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam qui ad dolor natus quis suscipit enim, architecto amet iusto, excepturi praesentium eius vero molestias et magnam iure porro iste odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus iure laudantium repudiandae dolorem rem libero minima vel quidem eligendi beatae recusandae alias corporis labore impedit deserunt at, quod quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ex! Ab quam eius quis laboriosam consectetur nam cum mollitia et accusamus! Error deserunt dignissimos libero ipsum corrupti quia alias mollitia.</p>
+        </section>
+
+        <!-- section 3 -->
+        <section>
+            <h3>Image dans le html</h3>
+            <img src="img/toureiffel.jpg" alt="la tour eiffel" title="Une belle image de la Tour Eiffel">
+        </section>
+
+        <!-- section 4  -->
+        <section class="au-centre">
+            <h3>Images dans le HTML avec des effets CSS</h3>
+            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden">
+
+            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden">
+            
+            <blockquote>Et pourant elle tourne !</blockquote>
+            <img src="img/golden_gate.jpg" alt="le golden gate bridge" class="img-golden rotation-360">
+        </section>
+    </main>
+
+    <!-- pied de page-->
+    <footer>
+        <!-- pour les caractères spéciaux nous avons besoin de les coder cf. https://dev.w3.org/html5/html-author/charref  -->
+        <p>&copy; L'agence Suresnes 2021</p>
+    </footer>
+    <!-- fin footer-->
+</body>
+</html>

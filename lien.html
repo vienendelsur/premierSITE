@@ -68,7 +68,7 @@
 				<a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
 				<a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
 				<a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
-				<a href="lien.html" title="HTML 5 CSS 3 - Liens">Lien</a>
+				<a href="lien.html" title="HTML 5 CSS 3 - Liens" class="active">Lien</a>
 				<a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire">Formulaire</a>
 				<a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
 				<a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
@@ -79,14 +79,18 @@
 		<!-- fin nav-->
 		<!-- contenu principal-->
 		<main>
-			<h2>Les liens - <i class="fas fa-anchor"></i></h2>
-			<div>
-				<!-- a*3  -->
-				<!-- 1/ 1er type de liens hyper-texte une ancre a/ le lien vers l'ancre attribut ex. "#liens" b/ l'ancre du lien id="liens"  -->
-				<a href="#liens">Les liens</a>
-				<a href="#menu">Un menu</a>
-				<a href="#menu-deroulant">Un menu déroulant</a>
-			</div>
+
+			<section>
+				<h2>Les liens - <i class="fas fa-anchor"></i></h2>
+				<div class="ancre">
+					<!-- a*3  -->
+					<!-- 1/ 1er type de liens hyper-texte une ancre a/ le lien vers l'ancre attribut ex. "#liens" b/ l'ancre du lien id="liens"  -->
+					<a href="#liens">Les liens</a>
+					<a href="#menu">Un menu</a>
+					<a href="#menu-deroulant">Un menu déroulant</a>
+				</div>
+			</section>
+
 			<hr>
 			<section id="liens">
 				<h3>Les liens</h3>
@@ -98,8 +102,8 @@
 				<a href="docs/planning_suresnes_version_1.pdf">Téléchargez le planning du chantier de Suresnes</a>
 				<!-- sur le lien une fonction JS dans l'attribut onclick qui permet d'imprimer la page-->
 				<a href="#" onclick="window.print()">Imprimer la page</a>
-
 			</section>
+
 			<section id="menu">
 				<h2>Une nav simple</h2>
 				<nav>

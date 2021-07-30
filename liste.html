@@ -57,7 +57,7 @@
 				<a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
 				<a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
 				<a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
-				<a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+				<a href="liste.html" title="HTML 5 CSS 3 - Liste" class="active">Liste</a>
 				<a href="lien.html" title="HTML 5 CSS 3 - Liens">Lien</a>
 				<a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire">Formulaire</a>
 				<a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
@@ -68,23 +68,23 @@
 		<!-- fin nav-->
 
         <main>
-            <h2>Les listes - <i class="fas fa-list-ul"></i></h2>
             <section>
+                <h2>Les listes - <i class="fas fa-list-ul"></i></h2>
                 <h3>Les listes avec la balise <code>&lt;ul&gt;</code></h3>
-                <p>Les fruits que préfère Miredie</p>
+                <p>Les fruits que préfère Miredi</p>
                 <!-- ul : unordered list ; liste non ordonnée ou liste à puces -->
-                <ul>
+                <ul class="fruit">
                     <!-- li : list item ; un élément de liste -->
-                    <li>Raisin</li>
-                    <li>Melon</li>
-                    <li>Orange</li>
-                    <li>Ananas</li>
+                    <li><i class="far fa-hand-spock"></i> Raisin</li>
+                    <li><i class="far fa-hand-spock"></i> Melon</li>
+                    <li><i class="far fa-hand-spock"></i> Orange</li>
+                    <li><i class="far fa-hand-spock"></i> Ananas</li>
                 </ul>
 
                 <h3>Les listes avec la balise <code>&lt;ol&gt;</code></h3>
                 <p>Les fruits dans l'ordre de préférence</p>
                 <!-- ol : ordered list ; liste ordonnée ou liste numérotée -->
-                <ol>
+                <ol class="fruit-2">
                     <li>Raisin</li>
                     <li>Ananas</li>
                     <li>Melon</li>
@@ -92,10 +92,9 @@
                 </ol>
 
                 <h3>Les listes imbriquées</h3>
-
                 <!-- ul>li*6  -->
-                <ul>
-                    <li>Afrique
+                <ul class="imbriquee">
+                    <li class="affiche">Afrique
                         <ul>
                             <li>Afrique du Sud</li>
                             <li>Algérie</li>
@@ -105,7 +104,7 @@
                     </li>
                         
                     <li>Antarctique</li>
-                    <li>Amérique
+                    <li class="affiche">Amérique
                         <ul>
                             <li>Colombie</li>
                             <li>Guatémala</li>
@@ -113,7 +112,7 @@
                             <li>USA</li>
                         </ul>
                     </li>
-                    <li>Asie
+                    <li class="affiche">Asie
                         <ul>   
                             <li>Bangladesh</li>
                             <li>Chine</li>
@@ -122,7 +121,7 @@
                             <li>Vietnam</li>
                         </ul>
                     </li>
-                    <li>Europe
+                    <li class="affiche">Europe
                         <ul>
                             <li>Espagne</li>
                             <li>Italie</li>
@@ -130,7 +129,7 @@
                             <li>Hongrie</li>
                         </ul>
                     </li>
-                    <li>Océanie
+                    <li class="affiche">Océanie
                         <ul>
                             <li>Australie</li>
                             <li>Nelle Zélande</li>
