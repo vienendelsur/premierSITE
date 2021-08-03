@@ -54,11 +54,11 @@ h1 {
     /* typo google */
     font-family: 'Anton', sans-serif;
     /* taille de typo  */
-    font-size: 40px;
+    font-size: 35px;
     /* espacement entre les lettres */
     letter-spacing: 1px;
     /* couleur réf. héxadécimale */
-    color: #2980b9;
+    color: #fff;
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ blockquote i {
 
 /* header */
 header {
-    height: 175px;
+    height: 165px;
     background-color: #719bc5;
 }
 
