@@ -1,0 +1,37 @@
+/* Début feuille de style alpinisme */
+body {
+    background-color:white;  
+}
+
+/* Début transformation tableau */
+.tableau table, .tableau td {
+}
+
+.tableau table {
+
+    width: 80%;
+    margin: auto;
+}
+
+.tableau td {
+    
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tableau thead {
+   
+    text-align: center;
+}
+
+.tableau caption {
+    height: 50px;
+    padding-left: 5px;
+    
+    font-size: 25px;
+    text-align: left;
+   
+}
+
+/* Fin tranformation tableau */

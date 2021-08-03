@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<!-- Premiere page sur l'alpinisme-->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de l'onglet -->
+    <title>Une page sur l'alpinisme</title>
+
+    <!-- Mes styles -->
+    <link rel="stylesheet" href="css/rachid_alpinisme.css">
+</head>
+
+<body>
+    <!-- div.conteneur -->
+    <!-- Conteneur servant à définir la disposition des éléments qui sont liés le css
+    on aura par exemple: un display:block ou display:grid ou display:flex par ex
+    -->
+    <div class="conteneur">
+
+        <!-- header.row  -->
+        <header class="row">
+            <!-- div.col10.marge-1  -->
+            <div class="col-10 marge-1">
+                <!-- Titre de la page  -->
+                <h1>Les grands alpinistes</h1>
+            </div>
+        </header>
+
+        <!-- Cette section fera une rangée (row) à terme  -->
+        <!-- 1ere section  -->
+        <section class="row">
+            <!-- On amorce l'apprentissage du responsive ici avec les col-... -->
+            <div class="col-xsm-12">
+                <p>1/ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem magni labore illo
+                    veritatis reiciendis id cumque aliquid sit ex molestias non aspernatur atque, nisi eaque blanditiis
+                    ab, eligendi debitis?</p>
+            </div>
+            <div class="col-sm-6">
+                <p>2/ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem magni labore illo
+                    veritatis reiciendis id cumque aliquid sit ex molestias non aspernatur atque, nisi eaque blanditiis
+                    ab, eligendi debitis?</p>
+            </div>
+            <div class="col-4">
+                <p>3/ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem magni labore illo
+                    veritatis reiciendis id cumque aliquid sit ex molestias non aspernatur atque, nisi eaque blanditiis
+                    ab, eligendi debitis?</p>
+            </div>
+        </section>
+        <!-- fin 1ere section  -->
+
+        <!-- 2eme section  -->
+        <section class="row">
+            <div class="col-2">
+                <p>1/ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ipsam a dicta! Maxime excepturi
+                    placeat qui est nihil ducimus, impedit amet rerum explicabo neque maiores iure, nulla quam! Ab,
+                    amet!</p>
+            </div>
+
+            <div class="col-10">
+                <figure>
+                    <img src="img/dolomites-santa-magdalena.png" alt="dolomites-santa-magdalena" title="Mon image">
+                    <figcaption>Les Dolomites dans le nord de l'Italie</figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- fin 2eme section -->
+
+        <!-- 3eme section -->
+        <section class="row">
+            <div class="col-8">
+                <table>
+                    <!-- La légende de la table -->
+                    <caption>Quelques alpinistes célèbres</caption>
+                    <!-- Chaque <tr> correspond à un enregistrement de la table -->
+                    <tr>
+                        Chaque <th> correspond à un en-tête de la table
+                        <th>Prénom</th>
+                        <th>Nom de famille</th>
+                        <th>Sommet</th>
+                        <th>Dates</th>
+                    </tr>
+
+                    <tr>
+                        <td>Tensing</td>
+                        <td>Norgay</td>
+                        <td>Everest</td>
+                        <td>Il est le premier homme avec Edmund Hilary à atteindre le sommet de l'Everest, le 29 mai
+                            1953, à 11h30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Henriette</td>
+                        <td>D'Angeville</td>
+                        <td>Deuxième femme à gravir le <a
+                                href="https://fr.wikipedia.org/wiki/Henriette_d%27Angeville">Mont Blanc</a></td>
+                        <td>3 septembre 1838 </td>
+                    </tr>
+
+                    <tr>
+                        <td>Marie</td>
+                        <td>Paradis</td>
+                        <!-- <a href> est une balise renvoyant vers un lien -->
+                        <td>Première femme à gravir le <a href="https://fr.wikipedia.org/wiki/Marie_Paradis">Mont
+                                Blanc</a></td>
+                        <td>En 1808</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- fin section 3 -->
+
+        <!-- Le footer correpond au pied de page de la table  -->
+        <footer class="row">
+            <div class="col-xsm-12 col-sm-6 col-4">
+                <p>1/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima quia corrupti impedit unde
+                    non
+                    at blanditiis vero nemo omnis distinctio facilis esse, est exercitationem maiores dignissimos itaque
+                    nulla? Aliquid?</p>
+            </div>
+            <div class="col-xsm-12 col-sm-6 col-8">
+                <p>2/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima quia corrupti impedit unde
+                    non
+                    at blanditiis vero nemo omnis distinctio facilis esse, est exercitationem maiores dignissimos itaque
+                    nulla? Aliquid?</p>
+            </div>
+        </footer>
+        <!-- fin footer -->
+    </div>
+</body>
+
+</html>
