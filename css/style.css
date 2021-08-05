@@ -561,3 +561,65 @@ textarea {
 label {
     margin: 20px 10px;
 }
+
+/* page multimédia */
+
+/* pour you tube */
+
+iframe[src="https://www.youtube-nocookie.com/embed/nkj4RCcR0CY"] {
+    width: 100%;
+}
+
+/* pour les iframe */
+
+iframe[allowfullscreen] {
+    width: 100%;
+}
+
+.bordure {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 10px solid rgb(235, 95, 76);
+}
+
+/* pour la vidéo de fond  */
+ /* réglage de la section */
+.video-fond {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.video-fond video {
+    /* la position est absolue sur la page  */
+    position: absolute;
+    /* margin: 0 auto; */
+    width: 80%;
+    /* l'empilement, le z-index : le 1 est le niveau le plus bas dans l'ordre d'empilement : le z-order */
+    z-index: 1;
+}
+
+.video-texte {
+    position: relative;
+    /* postion relative permet de décaler un élément par rapport à sa position normale */
+    width: 100%;
+    height: 500px;
+    /* border: rgb(54, 52, 56) 10px solid; */
+}
+
+
+.video-fond p {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    left: 225px;
+    top: 225px;
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.60);
+
+    font-size: 120%;
+    text-align: center;
+}
