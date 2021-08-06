@@ -623,3 +623,37 @@ iframe[allowfullscreen] {
     font-size: 120%;
     text-align: center;
 }
+
+/* page des zonings */
+
+/* pour le zoning 1 */
+
+#zoning-1 {
+    width: 800px;
+    margin: auto;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+#zoning-1 header  {
+    height: 70px;
+    background: #F7F39A;
+}
+
+#zoning-1 aside {
+    height: 525px;
+    width: 20%;
+    float: left;
+    padding: 0;
+    background: #A3DE83;
+ }
+ 
+#zoning-1 section {
+    height: 525px;
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+    background: #4dc40d;
+ }
