@@ -1,32 +1,26 @@
-body {
-    background-color: yellowgreen;
-    color: #fff;
-}
-
-/* les couleurs pour les div */
-.rose {
-    background-color:pink;
-}
-
-.corail {
-    background-color: lightcoral;
-}
-
-/* les styles commun aux div de la page */
-
-.c1, .c2 {
-    border: 0.2em solid white;
+ /* Cubitus 02 - pisola Suresnes */
+ 
+ .c1, .c2 {
     height: 10em;
     width: 10em;
-    border: 0.2em solid white;
+
+    border: 0.2em solid black;
+    margin: 0.2em;
     float: left;
+
+    /*display: inline-block;*/
+    border-radius: 20%;
     
-    border-radius: 10% 5% 40% 0%;
-    margin: 1px;
-
     text-align: center;
+    font-size: 120%;
+    color: white;
 }
-
+.c1 {
+    background-color: #7a43e0;
+}
+.c2 {
+    background-color: #43e07a;
+}
 .clear {
     clear: both;
 }
