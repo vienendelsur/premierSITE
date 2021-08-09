@@ -1,0 +1,32 @@
+body {
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+/* les couleurs pour les div */
+.rose {
+    background-color:pink;
+}
+
+.corail {
+    background-color: lightcoral;
+}
+
+/* les styles commun aux div de la page */
+
+.c1, .c2 {
+    border: 0.2em solid white;
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid white;
+    float: left;
+    
+    border-radius: 10% 5% 40% 0%;
+    margin: 1px;
+
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}

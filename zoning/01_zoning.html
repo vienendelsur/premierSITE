@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er zoning</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        main {
+            width: 1200px;
+            margin: auto;
+            /* background-color: #fff; */
+        }
+
+        header {
+            float: left;
+            width: 1200px;
+            height: 150px;
+            background-color: rgb(243, 130, 130);
+        }
+
+        aside {
+            float: left;
+            width: 245px;
+            min-height: 700px;
+            border-right: 5px solid rgb(146, 212, 84);
+            background-color: rgb(218, 245, 192);
+        }
+
+        section {
+            float: left;
+            width: 930px;
+            min-height: 700px;
+            padding-left: 20px;
+            background-color: rgb(218, 245, 192);
+        }
+
+        /* il est toujours utile de placer une classe clear pour rétablir si on fait flotter les éléments avant */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Zone de l'en-tête <code>&lt;header></code></h1>
+            <p>1200px de large</p>
+        </header>
+        <aside>
+            <h3>Zone à gauche <code>&lt;aside></code></h3>
+            <p>250px de large</p>
+        </aside>
+        <section>
+            <h2>Zone de droite ou zone principale <code>&lt;section></code></h2>
+            <p>950px de large</p>
+            <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, vero iusto aut odit iure possimus aliquid. Unde ipsa officiis dicta, tempore quae voluptatem eos eaque iste, molestiae beatae cupiditate ratione!</span><span>Maiores amet error atque, aliquam quo minima deserunt, odit hic, autem nobis praesentium doloribus? Repellat nulla, exercitationem, omnis elig</p>
+        </section>
+        <!-- la div qui permet de rétablir le flux et qui est généralement vide  -->
+        <div class="clear"></div>
+    </main>
+    
+</body>
+</html>
