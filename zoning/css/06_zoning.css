@@ -1,1 +1,40 @@
 /* zoning 6 - pisola Suresnes */
+
+body {
+    background-image: url(../../img/concrete-texture.png);
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+section {
+    width: 50%;
+    float: left;
+    min-height: 600px;
+}
+
+.bleu {
+    background-color:red;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: pink;
+}
+
+footer p {
+    margin: 0;
+}
+
+div {
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: peachpuff;
+}
