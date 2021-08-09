@@ -1,0 +1,109 @@
+/* zoning 6  */
+
+#zoning-6 {
+    color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+#zoning-6 header {
+    /* background: #32ff32; */
+    height: 200px;
+}
+
+.haut-1 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: tomato;
+}
+.haut-2 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background: teal;
+}
+.haut-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: turquoise;
+}
+
+#zoning-6 nav {
+    /* border: none; */
+    height: 100px;
+    background-color: lightblue;
+}
+
+#zoning-6 aside {
+    width: 25%;
+    float: left; 
+    background: thistle;
+    height: 500px;
+}
+
+#zoning-6 section {
+    float: left;
+    width: 75%;
+    background: #A3DE83;
+    margin: 0;
+    padding: 0;
+}
+
+#zoning-6 .a {
+    height: 200px;
+    background: wheat;
+    float: left;
+    width: 50%; 
+}
+
+#zoning-6 .b {
+    height: 200px;
+    background: whitesmoke;
+    float: left;
+    width: 50%;                
+}
+
+#zoning-6 .diaporama {
+    height: 201px;
+    background: #A3DE83;
+}
+
+#zoning-6 .c {
+    float: left;
+    width: 25%;
+    background: #32ff32;
+    height: 100px;
+}
+
+#zoning-6 .d {
+    float: left;
+    width: 25%;
+    background: #e032ff;
+    height: 100px;
+}
+
+#zoning-6 .e {
+    float: left;
+    width: 25%;
+    background: #ffa632;
+    height: 100px;
+}
+
+#zoning-6 .f {
+    float: left;
+    width: 25%;
+    background: #ff3265;
+    height: 100px;
+}
+
+#zoning-6 footer {
+    background: #0B5269;
+    /* min-height: 100px; */
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
