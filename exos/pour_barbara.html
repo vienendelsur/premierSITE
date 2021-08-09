@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Barbara !</title>
+    <style>
+
+        body {
+            background-color: rgb(162, 195, 245);
+        }
+
+        main {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        header, nav {
+            background-color: rgb(227, 215, 215);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .vert {
+            background-color: green;
+        }
+
+        section {
+            float: left;
+            width: 500px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h1 {
+            height: 100px;
+            text-align: center;
+            font-size: 45px;
+            padding: 25px;
+            border-left: blue 10px solid;
+        }
+
+        a {
+            
+            background-color: #fff;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            width: 100px;
+            border: 2px violet solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h1>Coucou !</h1>
+        </div>
+    </header>
+    <!-- fin div logo -->
+    <nav>
+        <ul>
+            <li class="vert"><a href="">Accueil</a></li>
+            <li><a href="">Projets</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+        
+    <main>
+        <section class="vert">
+            <h2>titre 2</h2>
+            <p>1/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi voluptatem amet, laborum cum veniam soluta ad impedit deserunt quibusdam corporis. Molestias repellat ut magni maxime commodi vel enim provident.</p>
+            <img src="img/cinque_torre.png" alt="les cinque torre dans les alpes italiennes">
+            <p>Visitez <a href="https://macbidouille.com/" target="_blank">Mac bidouille,</a> il est très beau </p>
+        </section>
+
+        <section>
+            <h2>titre 2</h2>
+            <p class="vert">2/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi voluptatem amet, laborum cum veniam soluta ad impedit deserunt quibusdam corporis. <strong>Molestias repellat ut magni maxime</strong> commodi vel enim provident.</p>
+        </section>
+        <div class="clear"></div>
+    </main>
+
+    <footer>
+        <p>pied de page</p>
+    </footer>
+</body>
+</html>
