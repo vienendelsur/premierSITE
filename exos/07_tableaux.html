@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Des tableaux</title>
+    <style>
+        body {
+            background-color: oldlace;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            margin: 0 auto;
+            width: 80%;
+            padding: 10px;
+
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        /* les styles pour le tableau avec la classe adresses */
+
+        table.adresse {
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        table.adresse, .adresse td  {
+            border: 1px solid salmon;
+        }
+
+        .adresse caption {
+            background-color:lightblue;
+            height: 60px;
+            /* line height hauteur de ligne identique à la hauteur du parent, a pour effet de centrer verticalement */
+            line-height: 60px;
+
+            border-top: 1px solid salmon;            
+            border-left: 1px solid salmon;           
+            border-right: 1px solid salmon;
+
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .adresse thead {
+            background-color:rgb(0, 195, 255);
+            font-weight: bold;
+        }
+
+        .adresse td {
+            padding: 10px;
+        }
+
+        /* even = pair */
+        /* odd = impair */
+        .adresse tr:nth-child(odd):not(:only-child) {
+            background-color:rgba(173, 223, 240, 0.8);
+        }
+
+        .adresse tr:nth-child(even) {
+            background-color:rgba(45, 176, 219, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Tableau HTML : mes magasins préférés</h1>
+            <table class="adresse">
+                <caption>
+                    Adresses // fournisseurs
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Cie</th>
+                        <th>Contact</th>
+                        <th>Adresse</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>cellule 1</td>
+                        <td>cellule 2</td>
+                        <td>cellule 3</td>
+                    </tr>
+                    <tr>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                    </tr>
+                    <tr>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                    </tr>
+                    <tr>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                    </tr>
+                    <tr>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                        <td>coucou</td>
+                    </tr>
+                </tbody>
+            </table>
+        <hr>
+        <table>
+            <caption>tableau 2</caption>
+            <tr>
+                <td>texte 1</td>
+                <td>texte 2</td>
+                <td>texte 3</td>
+                <td>texte 4</td>
+            </tr>
+            <tr>
+                <td>texte 1</td>
+                <td>texte 2</td>
+                <td>texte 3</td>
+                <td>texte 4</td>
+            </tr>
+            <tr>
+                <td>texte 1</td>
+                <td>texte 2</td>
+                <td>texte 3</td>
+                <td>texte 4</td>
+            </tr>
+            <tr>
+                <td>texte 1</td>
+                <td>texte 2</td>
+                <td>texte 3</td>
+                <td>texte 4</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* zoning 7 - pisola Suresnes */
+
+body {
+    background-color: #eee8aa;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+ 
+h1, p {
+    margin: 0;
+}
+
+#zoning-7 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: orangered;
+}
+
+#zoning-7 header {
+    height: 80px;
+    background-color: #40a497;
+}
+
+#zoning-7 nav {
+    height: 30px;
+    background-color: #9a40a4;
+}
+
+#zoning-7 section  {
+    height: 600px;
+    margin: 20px;
+    background-color: pink;
+}
+
+.a, .b, .c, .d {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.a { 
+    background: #32a7a0; 
+}
+
+.b { 
+    background: #d69f1b; 
+}
+
+.c { 
+    background: #b1b2d8; 
+}
+
+.d { 
+    background: #1217f2; 
+}
+
+footer {
+    background: #32a7a0;
+    height: 80px;
+}
+
+.clear {
+    clear: both;
+}
