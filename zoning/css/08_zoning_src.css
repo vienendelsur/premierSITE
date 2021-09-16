@@ -1,10 +1,14 @@
 /* zoning 6  */
+body {
+    background-color: lightgrey;
+}
 
 #zoning-6 {
-    color: #fff;
+    color: #333;
     width: 1000px;
     margin: 0 auto;
     text-align: center;
+    /* border: 1px solid #333; */
 }
 #zoning-6 header {
     /* background: #32ff32; */

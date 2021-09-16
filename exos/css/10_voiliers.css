@@ -1,0 +1,118 @@
+/* style pour la galerie de voiliers */
+
+@charset "utf-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*fin du reset eric meyer*/
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.9em;
+    color: #333;
+}
+
+.clear {
+    clear: both;
+}
+
+/* contenu principal */
+main {
+    background-color: rgb(152, 189, 238);
+    width: 1200px;
+    margin: 0 auto;
+}
+ /* en-tête */
+header {
+   height: 150px;
+}
+
+/* nav */
+nav {
+    background-color: rgb(191, 191, 219);
+    height: 100px;
+}
+
+/* section principale */
+section {
+    background-color: rgb(235, 205, 210);
+    height: auto;
+    /* height: 250px; */
+}
+
+/* pied de page */
+footer {
+    height: 80px;
+}
+
+/* pour la galerie */
+
+.galerie {
+    /* je calcule la largeur des images et pour centrer je cherche les marges restantes et je divise par deux ce qui ml 240px ou ml 20% */
+    /* margin-left: 240px; */
+    margin-left: 20%;
+}
+ /* la class qui englobe figure  */
+.photo  {
+    float: left;
+    padding: 30px 10px;
+}
+
+figcaption {
+    position: relative;
+    bottom: 20px;
+
+    opacity: 0.8;
+    background-color: rgb(240, 92, 92);
+    height: 20px;
+    line-height: 20px;
+
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}

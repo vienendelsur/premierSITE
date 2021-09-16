@@ -793,3 +793,115 @@ iframe[allowfullscreen] {
     text-align: center;
     font-size: 25px;
 }
+
+/* la page animation */
+
+.info-bulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    background: #444;
+}
+
+.info-bulle p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info-bulle a {
+    padding: 5px 15px;
+    /* le contour du a que l'on voit sur le hover */
+    border-radius: 10px;
+    color: lightgrey;
+    text-decoration: none;
+    text-shadow: 0 -2px 0 black;
+}
+
+.info-bulle a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.info-bulle a span {
+    position: absolute;
+    padding: 10px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(255, 255, 255, 0.9);
+    /* le contenu de span disparaît grâce à cette ligne  */
+    opacity: 0;
+
+    color: #09c;
+    transition: .25s;
+    /* le contenu de span disparaît AUSSI grâce à cette ligne  */
+    transform: scale(0) rotateZ(-12deg);
+    border-radius: 13px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.info-bulle a:hover span {
+    /* et on fait ré-apparaître span  */
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.info-bulle a span:before {
+    content: ' ';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    
+    border-bottom: 6px solid rgba(255, 255, 255, 0.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+/* effets survol avec des transitions et des filtres */
+
+
+.img-effets {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.img-effets li {
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.img-effets li:nth-child(3) {
+    /* la dernière des 4 li (on commence à compter à 0) reprend sa position dans le flux */
+    clear: both;
+    /* border: 10px solid red; */
+}
+
+.img-effets img {
+    position: absolute;
+    /* toutes les images sont empilées en bas */
+    z-index: 1;
+    /* on cale l'image dans un bloc de 150px même hauteur que la li */
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    /* la transition fonctionne avec un transform sur le /hover du li */
+    transition: .5s cubic-bezier(0,3,.4,1);
+}
+
+.img-effets li:hover img {
+    /* l'image sur le hover passe au premier plan car le z-index est à 2 */
+    z-index: 2;
+    /* transform peut fonctionner sans transition */
+    transform: scale(1.5);
+    box-shadow: 0 0 10px red;
+}
+
+.img-effets:hover li:not(:hover) img {
+    /* on met en niveau de gris ce qui n'est pas survolé */
+    filter: grayscale(1) blur(2px);
+}
